@@ -1,0 +1,4 @@
+script:
+- export TARGET_APP = $(APP_BRANCH)
+- if [[ "$TRAVIS_BRANCH" == "master" ]]; then export TARGET_APP = $(APP_MASTER);fi
+- echo "TARGET_APP is ($TARGET_APP) "
